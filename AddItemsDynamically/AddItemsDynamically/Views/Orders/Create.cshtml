@@ -1,0 +1,72 @@
+﻿@model AddItemsDynamically.Models.Order
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<h4>Order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" id="form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="IsUrgent" /> @Html.DisplayNameFor(model => model.IsUrgent)
+                    </label>
+                </div>
+            </div>
+            <div id="orderItemsContainer">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <input class="btn btn-default" type="button" id="btnAdd" value="Add" />
+                </div>
+                <div class="col-md-4">
+                    <input type="submit" value="Create" id="submit" class="btn btn-default" />
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".disabled-input").attr("disabled", true)
+        $(".disabled-box input").attr("disabled", true)
+        $(".disabled-box textarea").attr("disabled", true)
+    });
+            $("#btnAdd").on('click', function () {
+                $.ajax({
+                    async: true,
+                    data: $('#form').serialize(),
+                    type: "POST",
+                    url: '/Orders/AddOrderItem',
+                    success: function (partialView) {
+                        console.log("partialView: "+partialView);
+                        $('#orderItemsContainer').html(partialView);
+                         //$(".disabled-input").attr("disabled", true)
+                    }
+                });
+            });
+
+           
+</script>
+}

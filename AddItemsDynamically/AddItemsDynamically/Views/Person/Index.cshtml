@@ -1,0 +1,46 @@
+﻿@*@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+<h2>View Details</h2>
+</head>
+<body>
+    <form method="post" action="Person\Index">
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+        <table>
+            <tr>
+                <td>Enter First Name</td>
+                <td><input type="text" id="fname_id" name="fname_name" /></td>
+            </tr>
+            <tr>
+                <td>Enter Last Name</td>
+                <td><input type="text" id="lname_id" name="lname_name" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <input type="submit" />
+            </tr>
+        </table>
+    </form>
+</body>
+</html>*@
+@{
+    ViewBag.Title = "Index Page";
+}
+ 
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<h2>View Details</h2>
+ 
+<strong>Name</strong> : @ViewData["Name"]<br />
+<strong>City</strong> : @ViewData["City"]<br />
+<strong>Address</strong> : @ViewData["Address"]<br />

@@ -1,0 +1,50 @@
+﻿@model AddItemsDynamically.Models.OrderItem
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    OrderItem Items = (OrderItem)ViewData["OrderItem"];
+}
+
+<h2>Create</h2>
+
+<h4>OrderItem</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="OrderItemNo" class="control-label" data-tooltip="OrderItemNo"></label>
+                    <input id="Items_@(Model.OrderItemNo-1)__OrderItemNo" name="Items[@(Model.OrderItemNo-1)].OrderItemNo" class="form-control" value="@Model.OrderItemNo" type="number" disabled>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="@Items.ProductName" class="control-label"></label>
+                    <input id="Items_@(Model.OrderItemNo-1)__ProductName" name="Items[@(Model.OrderItemNo-1)].ProductName" value="@Model.ProductName" type="text" class="form-control">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label asp-for="@Items.Quantity" class="control-label"></label>
+                    <input id="Items_@(Model.OrderItemNo-1)__Quantity" name="Items[@(Model.OrderItemNo-1)].Quantity" value="@Model.Quantity" type="number" Step="any" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" id="submit" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
