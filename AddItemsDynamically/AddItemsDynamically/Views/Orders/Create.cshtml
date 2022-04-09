@@ -48,11 +48,6 @@
     await Html.RenderPartialAsync("_ValidationScriptsPartial");
 }
 <script type="text/javascript">
-    $(document).ready(function () {
-        $(".disabled-input").attr("disabled", true)
-        $(".disabled-box input").attr("disabled", true)
-        $(".disabled-box textarea").attr("disabled", true)
-    });
             $("#btnAdd").on('click', function () {
                 $.ajax({
                     async: true,
@@ -62,7 +57,6 @@
                     success: function (partialView) {
                         console.log("partialView: "+partialView);
                         $('#orderItemsContainer').html(partialView);
-                         //$(".disabled-input").attr("disabled", true)
                     }
                 });
             });

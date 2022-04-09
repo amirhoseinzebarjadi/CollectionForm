@@ -72,7 +72,7 @@ namespace AddItemsDynamically.Controllers
             };
             Items.Add(orderItemNo);
 
-            return PartialView("OrderItems", Items);
+            return PartialView("~/Views/shared/EditorTemplates/OrderItems.cshtml", Items);
 
         }
 

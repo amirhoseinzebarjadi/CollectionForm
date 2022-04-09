@@ -29,7 +29,6 @@ D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Create.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Details.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Index.cshtml.g.cs
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\OrderItems.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Person\Create.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Person\Index.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Shared\EditorTemplates\OrderItem.cshtml.g.cs
@@ -46,3 +45,4 @@ D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.pdb
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.genruntimeconfig.cache
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.csproj.CopyComplete
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Shared\EditorTemplates\OrderItems.cshtml.g.cs
