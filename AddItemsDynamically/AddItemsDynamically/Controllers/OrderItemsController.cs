@@ -18,7 +18,7 @@ namespace AddItemsDynamically.Controllers
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.OrderItem.ToListAsync());
+            return View(await _context.Items.ToListAsync());
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -28,7 +28,7 @@ namespace AddItemsDynamically.Controllers
                 return NotFound();
             }
 
-            var orderItem = await _context.OrderItem
+            var orderItem = await _context.Items
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (orderItem == null)
             {
@@ -58,7 +58,7 @@ namespace AddItemsDynamically.Controllers
 
         private bool OrderItemExists(int id)
         {
-            return _context.OrderItem.Any(e => e.Id == id);
+            return _context.Items.Any(e => e.Id == id);
         }
     }
 }

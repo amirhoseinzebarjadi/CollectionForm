@@ -20,7 +20,7 @@ namespace AddItemsDynamically.Data
         }
 
         public DbSet<Order> Order { get; set; }
-        public DbSet<OrderItem> OrderItem { get; set; }
+        public DbSet<OrderItem> Items { get; set; }
         public DbSet<Person> Person { get; set; }
     }
 }

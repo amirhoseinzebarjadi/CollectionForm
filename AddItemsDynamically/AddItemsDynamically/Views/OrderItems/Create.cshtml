@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    OrderItem Items = (OrderItem)ViewData["OrderItem"];
+    OrderItem OrderItem = (OrderItem)ViewData["OrderItem"];
 }
 
 <h2>Create</h2>
@@ -22,13 +22,13 @@
             <div class="col-md-4">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
-                    <label asp-for="@Items.ProductName" class="control-label"></label>
+                    <label asp-for="@OrderItem.ProductName" class="control-label"></label>
                     <input id="Items_@(Model.OrderItemNo-1)__ProductName" name="Items[@(Model.OrderItemNo-1)].ProductName" value="@Model.ProductName" type="text" class="form-control">
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="form-group">
-                    <label asp-for="@Items.Quantity" class="control-label"></label>
+                    <label asp-for="@OrderItem.Quantity" class="control-label"></label>
                     <input id="Items_@(Model.OrderItemNo-1)__Quantity" name="Items[@(Model.OrderItemNo-1)].Quantity" value="@Model.Quantity" type="number" Step="any" class="form-control">
                 </div>
             </div>

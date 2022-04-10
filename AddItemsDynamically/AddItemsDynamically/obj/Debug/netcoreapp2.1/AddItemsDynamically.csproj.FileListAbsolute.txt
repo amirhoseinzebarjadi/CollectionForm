@@ -1,3 +1,10 @@
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.csproj.AssemblyReference.cache
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.AssemblyInfoInputs.cache
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.AssemblyInfo.cs
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.csproj.CoreCompileInputs.cache
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.RazorAssemblyInfo.cache
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.RazorAssemblyInfo.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\bin\Debug\netcoreapp2.1\app.config
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\bin\Debug\netcoreapp2.1\appsettings.Development.json
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\bin\Debug\netcoreapp2.1\appsettings.json
@@ -9,13 +16,6 @@ D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\bin\Debug\netcoreapp2.1
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\bin\Debug\netcoreapp2.1\AddItemsDynamically.pdb
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\bin\Debug\netcoreapp2.1\AddItemsDynamically.Views.dll
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\bin\Debug\netcoreapp2.1\AddItemsDynamically.Views.pdb
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.csproj.AssemblyReference.cache
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.GeneratedMSBuildEditorConfig.editorconfig
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.AssemblyInfoInputs.cache
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.AssemblyInfo.cs
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.csproj.CoreCompileInputs.cache
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.RazorAssemblyInfo.cache
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.RazorAssemblyInfo.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.TagHelpers.input.cache
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.TagHelpers.output.cache
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.RazorCoreGenerate.cache
@@ -29,6 +29,7 @@ D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Create.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Details.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\Index.cshtml.g.cs
+D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Orders\OrderItems.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Person\Create.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Person\Index.cshtml.g.cs
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Shared\EditorTemplates\OrderItem.cshtml.g.cs
@@ -45,4 +46,3 @@ D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.pdb
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.genruntimeconfig.cache
 D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\AddItemsDynamically.csproj.CopyComplete
-D:\Test\shahrokh\AddItemsDynamically\AddItemsDynamically\obj\Debug\netcoreapp2.1\Razor\Views\Shared\EditorTemplates\OrderItems.cshtml.g.cs

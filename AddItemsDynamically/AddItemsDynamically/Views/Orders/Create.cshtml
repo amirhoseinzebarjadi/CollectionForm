@@ -39,6 +39,12 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="card-content py-0 dashed-box"> 
+            @Html.EditorFor(model => model.Items,"~/Views/Orders/OrderItems.cshtml")
+    </div>
+</div>
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
@@ -46,21 +52,19 @@
 @section Scripts {
     @{
     await Html.RenderPartialAsync("_ValidationScriptsPartial");
-}
+    }
 <script type="text/javascript">
-            $("#btnAdd").on('click', function () {
-                $.ajax({
-                    async: true,
-                    data: $('#form').serialize(),
-                    type: "POST",
-                    url: '/Orders/AddOrderItem',
-                    success: function (partialView) {
-                        console.log("partialView: "+partialView);
-                        $('#orderItemsContainer').html(partialView);
-                    }
-                });
-            });
-
-           
+    $("#btnAdd").on('click', function () {
+    $.ajax({
+    async: true,
+    data: $('#form').serialize(),
+    type: "POST",
+    url: '/Orders/AddOrderItem',
+    success: function (partialView) {
+    console.log("partialView: "+partialView);
+    $('#orderItemsContainer').html(partialView);
+    }
+    });
+    });
 </script>
-}
+    }

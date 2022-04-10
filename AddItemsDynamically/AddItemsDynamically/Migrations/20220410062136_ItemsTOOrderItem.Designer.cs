@@ -4,14 +4,16 @@ using AddItemsDynamically.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AddItemsDynamically.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220410062136_ItemsTOOrderItem")]
+    partial class ItemsTOOrderItem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,7 +56,7 @@ namespace AddItemsDynamically.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.ToTable("Items");
+                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("AddItemsDynamically.Models.Person", b =>
@@ -238,7 +240,7 @@ namespace AddItemsDynamically.Migrations
             modelBuilder.Entity("AddItemsDynamically.Models.OrderItem", b =>
                 {
                     b.HasOne("AddItemsDynamically.Models.Order")
-                        .WithMany("Items")
+                        .WithMany("OrderItem")
                         .HasForeignKey("OrderId");
                 });
 

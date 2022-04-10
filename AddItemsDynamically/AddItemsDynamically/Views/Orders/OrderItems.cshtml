@@ -3,4 +3,7 @@
     var s = 2;
 }
 @model List<AddItemsDynamically.Models.OrderItem>
-@Html.EditorFor(model => model , "~/Views/shared/EditorTemplates/OrderItem.cshtml")
+@*@Html.EditorFor(model => model , "OrderItem")*@
+       
+    @Html.EditorForModel()    
+

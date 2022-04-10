@@ -63,16 +63,15 @@ namespace AddItemsDynamically.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> AddOrderItem([Bind("Items")] List<OrderItem> Items)
+        public async Task<ActionResult> AddOrderItem([Bind("Items")] List<OrderItem> items)
         {
             var orderItemNo = new OrderItem()
             {
-                OrderItemNo = Items.Count + 1,
-                Id = Items.Count + 1
+                OrderItemNo = items.Count + 1
             };
-            Items.Add(orderItemNo);
+            items.Add(orderItemNo);
 
-            return PartialView("~/Views/shared/EditorTemplates/OrderItems.cshtml", Items);
+            return PartialView("~/Views/Orders/OrderItems.cshtml", items);
 
         }
 
