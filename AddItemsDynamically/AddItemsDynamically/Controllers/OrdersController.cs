@@ -63,7 +63,7 @@ namespace AddItemsDynamically.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> AddOrderItem([Bind("Items")] List<OrderItem> items)
+        public async Task<ActionResult> AddOrderItem([Bind("OrderItemNo")] List<OrderItem> items)
         {
             var orderItemNo = new OrderItem()
             {
